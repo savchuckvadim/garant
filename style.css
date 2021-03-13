@@ -189,6 +189,12 @@ p{
       margin-top: 2vh;
       
   }
+
+  .nav__text{
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: bold;
+      font-size: 1rem;
+  }
   /*.navpannel{
     margin: 0 auto;
     display: block;
@@ -208,6 +214,10 @@ p{
   }
   .tab-pane{
     overflow: visible;
+  }
+
+  .alert{
+      background: none;
   }
  
 .prog{
