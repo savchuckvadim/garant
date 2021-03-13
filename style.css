@@ -1,0 +1,268 @@
+
+.body
+{
+    width: 100%;
+    height: 100vh;
+    
+    
+    
+}
+main{
+    height: 100vh;
+ }
+ .section{
+     width: 180vh;
+     height: 100vh;
+     margin: 0 auto;
+     
+ }
+
+.main-first{
+    
+    margin: 0px;
+ 
+    
+    display: flex;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1490100667990-4fced8021649?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80');
+    
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.main-second{
+    
+    margin: 0px;
+ 
+    
+    display: flex;
+    justify-content: center;
+   /* background-image: url('https://images.unsplash.com/photo-1508615070457-7baeba4003ab?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80');*/
+   background-color: antiquewhite;
+    filter: sepia(30%);
+    
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.container-first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.main-1{
+   
+}
+
+
+
+.section__form{
+    background-image: url('https://unsplash.com/photos/JgOeRuGD_Y4');
+    background-color: opacity(80%);
+    background-size: cover;
+   
+}
+
+
+.container{
+    margin-top: 0;
+    height: 100vh;
+    width: 100%;
+   
+  
+}
+h2{
+    font-size: 1.1rem;
+    
+}
+.h1{
+   
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 2rem;
+    margin-top: 0px;
+    display: block;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+}
+.
+.cont__h1{
+    margin-top: 50px;
+}
+.h2 .f{
+    display: block;
+    
+    
+    font-size: 1rem;
+   
+}
+.forms{
+   
+    margin-top: 0px;
+    margin-left: 100px;
+   
+}
+
+.form-select{
+    display: block;
+    margin: 50px;
+    margin-left:  100px;
+
+ 
+    
+}
+
+.btn{
+    min-width: 200px;
+    min-height: 50px;
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: auto;
+    
+}
+.form__btn{
+   /* margin-left: 100px;*/
+}
+
+.row__button{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    margin-top: 0px;
+}
+
+.section__form{
+    height: 100%;
+    
+
+}
+
+.cont__form{
+    margin-left: 100px;
+   
+}
+.row--top{
+    display: flex;
+    flex-direction: space-between ;
+}
+.text-2{
+    color: blue;
+    font-size: 1.1rem;
+}
+.itog{
+    
+}
+
+p{
+    font-size: 0.8rem;
+    color: #000;
+    display: block;
+    margin: 15px;
+  }
+
+  /*1 HTML*/
+  .main__container {
+      overflow: auto;
+      
+      height: 100vh;
+      padding: 0px;
+  }
+  .nav-tabs{
+      margin-top: 2vh;
+      
+  }
+  /*.navpannel{
+    margin: 0 auto;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10vh;
+    z-index: 500;
+  }*/
+
+  .form__element{
+      margin: 30px auto;
+
+  }
+  .tab-content, .tab-pane, .form-inline, .container1{
+      height: 500px;
+      margin: 0;
+  }
+  .tab-pane{
+    overflow: visible;
+  }
+ 
+.prog{
+    margin: 0 auto;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2vh;
+    z-index: 500;
+    
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(130, 180, 199); 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #6f00ff; 
+}
+.prog__cont{
+    width: 100%;
+    height: 12vh;
+    margin: 0;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0vh;
+    z-index: +1100;
+    background-color: antiquewhite;
+    
+
+}
+
+  .form2__total{
+      
+  }
+
+  .inf__all{
+      display: block;
+     
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+
+  }
+
+ 

@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Гарант</title>
+  </head>
+  <body>
+    
+    <main class="main-1 main-second">
+      <section class="section">             
+        <div class="container-fluid main__container">
+          <div class="prog__cont">
+            <div class="row prog d-flex flex-row justify-content-around align-items-center">
+              <div class="col col-md-7 ">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 67%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+                
+                <div class="col col-sm-12 col-md-2">
+                  <div class="alert alert-primary" role="alert">
+                    <p class ="d-block text-2 form2__total">Блоки: 12</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navpannel">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Регион, Наименование комплекта, Количество ОД</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Информационное наполнение</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Ваш комплект</a>
+              </div>
+            </nav>
+          </div>
+          
+          
+            
+              <div class="tab-content" id="nav-tabContent">
+
+
+
+
+
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <form class="form-inline">
+                    <div class="container container1">
+                      
+                          <div class="row">
+                            <div class="col">
+                              <select class="form-control form-control-lg form__element">
+                                <p>Регион</p>
+                                <option>КМВ</option>
+                                <option>Ставрополь</option>
+                                <option>Владикавказ</option>
+                              </select>                                  
+                            </div>
+                            <div class="col">
+                              <select class="form-control form-control-lg form__element">
+                                <p>Количество Одновременных доступов</p>
+                                <option>1 ОД</option>
+                                <option>2 ОД</option>
+                                <option>3 ОД</option>
+                                <option>5 ОД</option>
+                                <option>10 ОД</option>
+                                <option>20 ОД</option>
+                                <option>50 ОД</option>
+                              </select>
+                            </div>
+                          </div>
+                          
+                          <div class="row form__element">
+                            <div class="col d-flex flex-column justify-content-start align-items-start">
+                              <p >Наименование комплекта</p>
+                            <div class="row">
+                              <div class="col d-flex flex-column justify-content-center align-items-start ">
+                                <div class="form-check ">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                  <label class="form-check-label" for="exampleRadios1">
+                                    <p>Гарант-Бухгалтер</p>
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                  <label class="form-check-label" for="exampleRadios2">
+                                    <p>Гарант-Бухгалтер госсектора</p>
+                                  </label>
+                                </div>
+                                <div class="form-check ">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                  <label class="form-check-label" for="exampleRadios1">
+                                    <p>Гарант-Юрист</p>
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                  <label class="form-check-label" for="exampleRadios2">
+                                    <p>Гарант Главный Бухгалтер</p>
+                                  </label>
+                                </div>
+                                <div class="form-check ">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                  <label class="form-check-label" for="exampleRadios1">
+                                    <p>Гарант Главный Бухгалтер госсектора</p>
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                  <label class="form-check-label" for="exampleRadios2">
+                                    <p>Гарант-Предприятие</p>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            </div>  
+                          </div>
+                          
+                          
+                          <div class="row">
+                            <div class="col">
+                              <button type="submit" class="btn btn-primary mb-2 form__element">Confirm identity</button>
+                            </div>
+                          </div>
+                        
+                      
+                          
+                        
+                    </div>
+                    
+                        
+                  </form>
+                </div>
+
+
+
+
+
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <div class="container-fluid">
+                    <div class="row inf__all">
+                      <div class="col col-sm-12 col-md-4">
+                        <form action="<?=$_SERVER['REQUEST_URI']?>" method="post">  
+                          <!--<p><action="<?=$_SERVER['REQUEST_URI']?>" method="post" name="checkbox[]">--> 
+                      <h2>Нормативно-правовые акты</h2>  
+                      <p><input type="checkbox" name="checkbox[1]" value="1" checked> Законодательство России</p>
+                      <p><input type="checkbox" name="checkbox[2]" value="2" > Законодательство Ставропольского края и КМВ или Законодательство РСО Алания </p>
+                      <p><input type="checkbox" name="checkbox[3]" value="3" > Отраслевое законодательство</p>
+                      <p><input type="checkbox" name="checkbox[4]" value="4" > Проекты законов</p>
+                      <p><input type="checkbox" name="checkbox[5]" value="5" > Международное право</p>
+                      <p><input type="checkbox" name="checkbox[6]" value="6" > ГОСТы Росии</p>
+                      <p><input type="checkbox" name="checkbox[7]" value="7" > Решения Федеральной антимонопольной службы</p>
+                    
+                    
+                      <h2>Судебная Практика</h2> 
+                      <p><input type="checkbox" name="checkbox[8]" value="8" > Практика высших судебных органов</p>   
+                      <p><input type="checkbox" name="checkbox[9]" value="9" > Практика арбитражных судов округов</p>
+                      <p><input type="checkbox" name="checkbox[10]" value="10"> Практика апелляционных судов округов</p>
+                      <p><input type="checkbox" name="checkbox[11]" value="11"> Практика судов общей юрисдикции</p>
+                      <p><input type="checkbox" name="checkbox[12]" value="12"> Энциклопедия судебной практики. Правовые позиции судов</p>
+                 
+                      <h2>Консультационные материалы</h2> 
+                      <p><input type="checkbox" name="checkbox[13]" value="13"> Большая библиотека юриста</p>
+                      <p><input type="checkbox" name="checkbox[14]" value="14"> Большая библиотека бухгалтера и кадрового работника</p>
+                      <p><input type="checkbox" name="checkbox[15]" value="15"> Библиотека консультаций. Бухгалтерия предприятия</p>
+                      <p><input type="checkbox" name="checkbox[16]" value="16"> Библиотека консультаций. Бюджетные организации</p>
+                      <p><input type="checkbox" name="checkbox[17]" value="17"> Библиотека консультаций. Кадры</p>
+                      
+                      
+                      </div>
+                      <div class="col col-sm-12 col-md-4">
+                                          
+                        <h2>Энциклопедии решений</h2>
+                        <p><input type="checkbox" name="checkbox[23]" value="22"> Энциклопедия решений. Проверки организаций и предпринимателей</p>
+                        <p><input type="checkbox" name="checkbox[24]" value="22"> Энциклопедия решений. Госсектор: учет, отчетность, финконтроль</p>
+                        <p><input type="checkbox" name="checkbox[25]" value="22"> Энциклопедия решений. Хозяйственные ситуации</p>
+                        <p><input type="checkbox" name="checkbox[26]" value="22"> Энциклопедия решений. Госзакупки</p>
+                        <p><input type="checkbox" name="checkbox[27]" value="22"> Энциклопедия решений. Трудовые отношения. Кадры</p>
+                        <p><input type="checkbox" name="checkbox[28]" value="22"> Энциклопедия решений. Налоги и взносы</p>
+                        <p><input type="checkbox" name="checkbox[29]" value="22"> Энциклопедия решений. Договоры и иные сделки</p>
+                        <p><input type="checkbox" name="checkbox[30]" value="22"> Энциклопедия решений. Корпоративное право</p>
+
+                        <h2>Специализированные блоки</h2>
+                        <p><input type="checkbox" name="checkbox[18]" value="18"> Толковый словарь «Бизнес и право»</p>
+                        <p><input type="checkbox" name="checkbox[19]" value="19"> Энциклопедия. Законодательство в схемах</p>
+                        <p><input type="checkbox" name="checkbox[20]" value="20"> Энциклопедия. Формы правовых документов</p>
+                        <p><input type="checkbox" name="checkbox[21]" value="21"> ГАРАНТ-Инфарм</p>
+                        <p><input type="checkbox" name="checkbox[22]" value="22"> Справочник нормативно-технической документации по строительству</p>
+                  
+                        <h2>Дополнительно</h2>
+                        <p><input type="checkbox" name="checkbox[28]" value="22"> Архивы ГАРАНТа</p>
+                        <p><input type="checkbox" name="checkbox[29]" value="22"> ПРАЙМ</p>
+                        <p><input type="checkbox" name="checkbox[30]" value="22"> Судебная практика: приложение к консультационным блокам</p>
+                        <p><input type="checkbox" name="checkbox[30]" value="22"> Большая домашняя правовая энциклопедия</p>
+                        
+                        
+                      </div>
+                      <div class="col col-sm-12 col-md-4">
+                        <h2>Пакет энциклопедий решений</h2>
+                        <p><input type="checkbox" name="checkbox[28]" value="22"> Пакет Энциклопедий решений для бухгалтера</p>
+                        <p><input type="checkbox" name="checkbox[29]" value="22"> Пакет Энциклопедий решений для бухгалтера госсектора</p>
+                        <p><input type="checkbox" name="checkbox[30]" value="22"> Пакет Энциклопедий решений для юриста</p>
+                  
+                                        
+                        <h2>Пакет услуг правового консалтинга</h2>
+                        <p><input type="checkbox" name="checkbox[28]" value="22"> Горячая Линия</p>
+                        <p><input type="checkbox" name="checkbox[29]" value="22"> Советы Экспертов</p>
+                        <p><input type="checkbox" name="checkbox[30]" value="22"> Правовой консалтинг. Премиум</p>
+                        
+
+                        <h2>Сервисный пакет Legal Tech</h2>
+                        <p><input type="checkbox" name="checkbox[28]" value="22"> Аналитическая система "Сутяжник"</p>
+                        <p><input type="checkbox" name="checkbox[29]" value="22"> Конструктор правовых документов</p>
+                        <p><input type="checkbox" name="checkbox[30]" value="22"> Экспресс проверка контрагентов</p>
+                        <p><input type="checkbox" name="checkbox[28]" value="22"> Экспресс Согласование</p>
+                        <p><input type="checkbox" name="checkbox[29]" value="22"> Экспресс тендер</p>
+                        <p><input type="checkbox" name="checkbox[30]" value="22"> Гарант Диск</p>
+                        <p><input type="checkbox" name="checkbox[28]" value="22"> Гарант Коннект</p>
+                        <p><input type="checkbox" name="checkbox[29]" value="22"> Гарант Патент</p>
+                        <p><input type="checkbox" name="checkbox[30]" value="22"> Интернет-Семианры</p>
+                      </div>
+                        
+                      
+      
+      
+                           
+                   
+                   
+                    
+                   
+                      
+                      
+                  
+                  
+                  
+                
+                  
+                  
+                  </form>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  
+                
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <p>Цена</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>              
+        </div>
+      </section>
+    </main>
+          
+          
+        
+      
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
