@@ -32,6 +32,9 @@ let enPaket3 = document.getElementById('encyclopedia_paket_3');
 let encyc1 = 0;
 let encyc2 = 0;
 let encyc3 = 0;
+let paket1 = document.getElementsByClassName('paket1');
+let paket2 = document.getElementsByClassName('paket2');
+let paket3 = document.getElementsByClassName('paket3');
 
 
 console.log(small);    
@@ -88,7 +91,7 @@ lib.addEventListener('click', function(){
 })
 
 /*Энциклопедии решений Для бухгалтера*/
-enPaket1.addEventListener('change', function(){
+/*enPaket1.addEventListener('change', function(){
     if(enPaket1.checked){
         
         encyclopedia1.checked = true;
@@ -112,7 +115,63 @@ enPaket1.addEventListener('change', function(){
         }
     }
 
-})
+})*/
+
+/*<fieldset id="shest">
+<legend><input type="checkbox"> Check all</legend>
+<input type="checkbox">
+<input type="checkbox">
+<input type="checkbox">
+</fieldset>
+
+
+var main = document.querySelector('#shest legend [type="checkbox"]'),
+    all = document.querySelectorAll('#shest > [type="checkbox"]');
+    */
+
+    
+
+for(let i=0; i<paket1.length; i++) {  // 1 и 2 пункт задачи
+    paket1[i].onclick = function() {
+        let paket1Checked = document.getElementsByClassName('paket1 > [type="checkbox"]:checked').length;
+        enPaket1.checked = paket1Checked == paket1.length;
+        enPaket1.indeterminate = paket1Checked > 0 && paket1Checked < paket1.length;
+    }
+}
+
+enPaket1.onclick = function() {  // 3
+    for(var i=0; i<paket1.length; i++) {
+        paket1[i].checked = this.checked;
+    }
+}
+
+for(let i=0; i<paket2.length; i++) {  // 1 и 2 пункт задачи
+    paket2[i].onclick = function() {
+        let paket2Checked = document.getElementsByClassName('paket2 > [type="checkbox"]:checked').length;
+        enPaket2.checked = paket2Checked == paket2.length;
+        enPaket2.indeterminate = paket2Checked > 0 && paket2Checked < paket2.length;
+    }
+}
+
+enPaket2.onclick = function() {  // 3
+    for(var i=0; i<paket2.length; i++) {
+        paket2[i].checked = this.checked;
+    }
+}
+
+for(let i=0; i<paket3.length; i++) {  // 1 и 2 пункт задачи
+    paket3[i].onclick = function() {
+        let paket3Checked = document.getElementsByClassName('paket3 > [type="checkbox"]:checked').length;
+        enPaket3.checked = paket3Checked == paket3.length;
+        enPaket3.indeterminate = paket3Checked > 0 && paket3Checked < paket3.length;
+    }
+}
+
+enPaket3.onclick = function() {  // 3
+    for(var i=0; i<paket3.length; i++) {
+        paket3[i].checked = this.checked;
+    }
+}
 
 /*http://jsfiddle.net/leaverou/ASPUA/
 http://shpargalkablog.ru/2013/08/checked.html*/
