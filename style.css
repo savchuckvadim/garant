@@ -178,7 +178,7 @@ h2{
     
 }
 
-p{
+p, label{
     font-size: 0.8rem;
     color: #000;
     display: block;
@@ -281,5 +281,25 @@ p{
       flex-direction: row;
 
   }
+#lib{
+    color: #000;
+}
+#lib1{
+    color: #000;
+}
+#lib2{
+    color: #000;
+}
+#lib3{
+    color: #000;
+}
+ #lib__change1{
+     color: rgb(0, 0, 0);
 
- 
+ }
+
+ .librauarys{
+     border-style: dotted;
+     border-width: 0.1px;
+     padding: 0.1rem;
+ }
