@@ -143,6 +143,8 @@ enPaket1.onclick = function() {  // 3
     for(var i=0; i<paket1.length; i++) {
         paket1[i].checked = this.checked;
     }
+    enPaket2.checked = false; 
+    enPaket3.checked = false;
 }
 
 for(let i=0; i<paket2.length; i++) {  // 1 и 2 пункт задачи
@@ -157,6 +159,8 @@ enPaket2.onclick = function() {  // 3
     for(var i=0; i<paket2.length; i++) {
         paket2[i].checked = this.checked;
     }
+    enPaket1.checked = false; 
+    enPaket3.checked = false;
 }
 
 for(let i=0; i<paket3.length; i++) {  // 1 и 2 пункт задачи
@@ -171,6 +175,8 @@ enPaket3.onclick = function() {  // 3
     for(var i=0; i<paket3.length; i++) {
         paket3[i].checked = this.checked;
     }
+    enPaket2.checked = false; 
+    enPaket1.checked = false;
 }
 
 /*http://jsfiddle.net/leaverou/ASPUA/
