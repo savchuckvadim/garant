@@ -26,7 +26,7 @@
                 
                 <div class="col col-sm-12 col-md-2">
                   <div class="alert alert-primary" role="alert">
-                    <p class ="d-block text-2 form2__total">Блоки: 12</p>
+                    <p class ="d-block text-2 form2__total blocks-weight" > Вес: </p>
                     
                 </div>
               </div>
@@ -143,29 +143,29 @@
                         <form action="<?=$_SERVER['REQUEST_URI']?>" method="post">  
                           <!--<p><action="<?=$_SERVER['REQUEST_URI']?>" method="post" name="checkbox[]">--> 
                       <h2>Нормативно-правовые акты</h2>  
-                      <p><input class="small" type="checkbox" name="checkbox[1]" value="1" checked> Законодательство России</p>
-                      <p><input class="small"  type="checkbox" name="checkbox[2]" value="2" > <a id="region">Законодательство Ставропольского края и КМВ или Законодательство РСО Алания</a> </p>
-                      <p><input class="big" type="checkbox" name="checkbox[3]" value="3" > Отраслевое законодательство</p>
-                      <p><input class="small" type="checkbox" name="checkbox[4]" value="4" > Проекты законов</p>
-                      <p><input class="small" type="checkbox" name="checkbox[5]" value="5" > Международное право</p>
-                      <p><input class="small" type="checkbox" name="checkbox[6]" value="6" > ГОСТы Росии</p>
-                      <p><input class="big" type="checkbox" name="checkbox[7]" value="7" > Решения Федеральной антимонопольной службы</p>
+                      <p><input id="1" class="small law gb gbg gu ggb ggbg gp" type="checkbox" name="checkbox[1]" value="1" checked> Законодательство России</p>
+                      <p><input id="2" class="small law gb gbg gu ggb ggbg gp"  type="checkbox" name="checkbox[2]" value="2" > <a id="region">Законодательство Ставропольского края и КМВ или Законодательство РСО Алания</a> </p>
+                      <p><input id="big" class="big" type="checkbox" name="checkbox[3]" value="3" > Отраслевое законодательство</p>
+                      <p><input id="region" class="small" type="checkbox" name="checkbox[4]" value="4" > Проекты законов</p>
+                      <p><input id="5" class="small" type="checkbox" name="checkbox[5]" value="5" > Международное право</p>
+                      <p><input id="6" class="small" type="checkbox" name="checkbox[6]" value="6" > ГОСТы Росии</p>
+                      <p><input id="big" class="big" type="checkbox" name="checkbox[7]" value="7" > Решения Федеральной антимонопольной службы</p>
                     
                     
                       <h2>Судебная Практика</h2> 
-                      <p><input type="checkbox" name="checkbox[8]" value="8" > Практика высших судебных органов</p>   
-                      <p><input type="checkbox" name="checkbox[9]" value="9" > Практика арбитражных судов округов</p>
-                      <p><input type="checkbox" name="checkbox[10]" value="10"> Практика апелляционных судов округов</p>
-                      <p><input type="checkbox" name="checkbox[11]" value="11"> Практика судов общей юрисдикции</p>
-                      <p><input type="checkbox" name="checkbox[12]" value="12"> Энциклопедия судебной практики. Правовые позиции судов</p>
+                      <p><input class="big" type="checkbox" name="checkbox[8]" value="8" > Практика высших судебных органов</p>   
+                      <p><input class="big" type="checkbox" name="checkbox[9]" value="9" > Практика арбитражных судов округов</p>
+                      <p><input class="big" type="checkbox" name="checkbox[10]" value="10"> Практика апелляционных судов округов</p>
+                      <p><input class="big" type="checkbox" name="checkbox[11]" value="11"> Практика судов общей юрисдикции</p>
+                      <p><input class="small" type="checkbox" name="checkbox[12]" value="12"> Энциклопедия судебной практики. Правовые позиции судов</p>
                  
                       <h2>Консультационные материалы</h2> 
-                      <p><input type="checkbox" name="checkbox[13]" value="13"> Большая библиотека юриста</p>
+                      <p><input class="big" type="checkbox" name="checkbox[13]" value="13"> Большая библиотека юриста</p>
                       
-                      <p><input type="checkbox" id="lib" name="checkbox[14]" value="14"><a id="lib__change"> Большая библиотека бухгалтера и кадрового работника</a></p>
-                      <p><input type="checkbox" id="lib1" name="checkbox[15]" value="15"><a id="lib__change1"> Библиотека консультаций. Бухгалтерия предприятия</a> </p>
-                      <p><input type="checkbox" id="lib2" name="checkbox[16]" value="16"> <a id="lib__change2"> Библиотека консультаций. Бюджетные организации</a></p>
-                      <p><input type="checkbox" id="lib3" name="checkbox[17]" value="17"> <a id="lib__change3"> Библиотека консультаций. Кадры</a></p>
+                      <p><input class="big gb gbg" type="checkbox" id="lib" name="checkbox[14]" value="14"><a id="lib__change"> Большая библиотека бухгалтера и кадрового работника</a></p>
+                      <p><input class="small" type="checkbox" id="lib1" name="checkbox[15]" value="15"><a id="lib__change1"> Библиотека консультаций. Бухгалтерия предприятия</a> </p>
+                      <p><input class="small" type="checkbox" id="lib2" name="checkbox[16]" value="16"> <a id="lib__change2"> Библиотека консультаций. Бюджетные организации</a></p>
+                      <p><input class="small" type="checkbox" id="lib3" name="checkbox[17]" value="17"> <a id="lib__change3"> Библиотека консультаций. Кадры</a></p>
                    
                       
                       </div>
@@ -184,7 +184,7 @@
                         <h2>Специализированные блоки</h2>
                         <p><input type="checkbox" name="checkbox[18]" value="18"> Толковый словарь «Бизнес и право»</p>
                         <p><input type="checkbox" name="checkbox[19]" value="19"> Энциклопедия. Законодательство в схемах</p>
-                        <p><input type="checkbox" name="checkbox[20]" value="20"> Энциклопедия. Формы правовых документов</p>
+                        <p><input class="gb gbg" type="checkbox" name="checkbox[20]" value="20"> Энциклопедия. Формы правовых документов</p>
                         <p><input type="checkbox" name="checkbox[21]" value="21"> ГАРАНТ-Инфарм</p>
                         <p><input type="checkbox" name="checkbox[22]" value="22"> Справочник нормативно-технической документации по строительству</p>
                   
@@ -198,8 +198,8 @@
                       </div>
                       <div class="col col-sm-12 col-md-4">
                         <h2>Пакет энциклопедий решений</h2>
-                        <label><input id="encyclopedia_paket_1" type="checkbox" name="checkbox[28]" value="22"> Пакет Энциклопедий решений для бухгалтера</label>
-                        <label><input id="encyclopedia_paket_2"  type="checkbox" name="checkbox[29]" value="22"> Пакет Энциклопедий решений для бухгалтера госсектора</label>
+                        <label><input id="encyclopedia_paket_1" class="gb" type="checkbox" name="checkbox[28]" value="22"> Пакет Энциклопедий решений для бухгалтера</label>
+                        <label><input id="encyclopedia_paket_2" class="gbg"  type="checkbox" name="checkbox[29]" value="22"> Пакет Энциклопедий решений для бухгалтера госсектора</label>
                         <p><input id="encyclopedia_paket_3" type="checkbox" name="checkbox[30]" value="22"> Пакет Энциклопедий решений для юриста</p>
                   
                                         
@@ -270,6 +270,7 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="script.js"></script>
+    <script src="generator.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -1,8 +1,15 @@
 
-const small = document.querySelector(".small");
-const big = document.querySelector('.big');
+const law = document.querySelector(".law");
+const law2 = document.querySelector(".law2");
+const big = document.getElementsByClassName('big');
+const small = document.getElementsByClassName('small');
 const region = document.getElementById('region');
 let reg = 0;
+let bigSum = 0;
+let smallSum = 0.5;
+let block = document.getElementsByTagName('checkbox');
+let weight = 0;
+let blocksWeight = document.querySelector('.blocks-weight');
 
 /*Библиотека бухгалтера*/
 const lib = document.getElementById('lib');
@@ -36,19 +43,78 @@ let paket1 = document.getElementsByClassName('paket1');
 let paket2 = document.getElementsByClassName('paket2');
 let paket3 = document.getElementsByClassName('paket3');
 
+//Комплекты
 
-console.log(small);    
-small.addEventListener('change',(event) =>  {
-    if(small.checked){
-		alert('Выбран');
-    }else{
-        alert('Идите!');
+let gb = document.getElementsByClassName('gb'); //гарант-бухгалтер-госсектора
+let gbg = document.getElementsByClassName('gbg');  //гарант-бухгалтер-госсектора
+let gu = document.getElementsByClassName('gu');  //  гарант-юрист
+let ggb = document.getElementsByClassName('ggb');  //  гарант-главный-бухгалтер 
+let ggbg = document.getElementsByClassName('ggbg');  //гарант-главный-бухгалтер-госсектора
+let gp = document.getElementsByClassName('gp');       //гарант-предприятие
+
+let complect = document.getElementById('exampleRadios1');
+// Законодательство России - обязательный блок
+const l = () => {
+    law.addEventListener('change',(event) =>  {
+        law.checked = true;
+       alert('Идите!');
+    
+})
+}
+
+l(law);
+
+
+/**Большие блоки  - вес */
+
+for(let i=0; i<big.length; i++) {
+    
+    big[i].onclick = function() {
+        if (big[i].checked == true){
+            bigSum += 1;
+        }else{
+            bigSum -= 1;
+        }
+        console.log(`${bigSum}bigSum`);
+        weight = bigSum + smallSum;
+        console.log(`${weight} weight`);
+        blocksWeight.innerText = `Вес:  ${weight}`;
     }
+ }
+
+ /**Малые  блоки  - вес */
+
+for(let i=0; i<small.length; i++) {
+    
+    small[i].onclick = function() {
+        if (small[i].checked == true){
+            smallSum = smallSum + 0.5 ;
+        }else{
+            smallSum = smallSum - 0.5 ;
+        }
+        console.log(`${smallSum}smallSum`);
+        weight = bigSum + smallSum;
+        console.log(`${weight} weight`);
+        blocksWeight.innerText = `Вес:  ${weight}`;
+    }
+ }
+
+ /** Вес всех блоков подставляем значение  */
+ blocksWeight.addEventListener('click',(event) =>  {
+    blocksWeight.innerText =`Вес:  ${weight}`;
+
 })
-  
-big.addEventListener('click', function () {
-    console.log('BIG');    
-})
+  //blocksWeight.value = weight.innerText;
+ 
+
+
+
+law.onclick = function(){
+    console.log('law');
+}  
+//big.addEventListener('click', function () {
+  //  console.log('BIG');    
+//})
 
 region.addEventListener('click', function(){
     if(reg == 0){
@@ -128,11 +194,24 @@ lib.addEventListener('click', function(){
 var main = document.querySelector('#shest legend [type="checkbox"]'),
     all = document.querySelectorAll('#shest > [type="checkbox"]');
     */
-
+/**
+ * let enPaket1 = document.getElementById('encyclopedia_paket_1');
+let enPaket2 = document.getElementById('encyclopedia_paket_2');
+let enPaket3 = document.getElementById('encyclopedia_paket_3');
+let encyc1 = 0;
+let encyc2 = 0;
+let encyc3 = 0;
+let paket1 = document.getElementsByClassName('paket1');
+let paket2 = document.getElementsByClassName('paket2');
+let paket3 = document.getElementsByClassName('paket3');
+ */
     
-
-for(let i=0; i<paket1.length; i++) {  // 1 и 2 пункт задачи
+/**Энциклопедии решений - по пакетам */
+for(let i=0; i<paket1.length; i++) {
+    //console.log(paket1);
+     // 1 и 2 пункт задачи
     paket1[i].onclick = function() {
+         
         let paket1Checked = document.getElementsByClassName('paket1 > [type="checkbox"]:checked').length;
         enPaket1.checked = paket1Checked == paket1.length;
         enPaket1.indeterminate = paket1Checked > 0 && paket1Checked < paket1.length;
@@ -145,6 +224,7 @@ enPaket1.onclick = function() {  // 3
     }
     enPaket2.checked = false; 
     enPaket3.checked = false;
+    
 }
 
 for(let i=0; i<paket2.length; i++) {  // 1 и 2 пункт задачи
@@ -178,6 +258,49 @@ enPaket3.onclick = function() {  // 3
     enPaket2.checked = false; 
     enPaket1.checked = false;
 }
+/*Гарант-бухгалтер
+
+let gb = document.getElementsByClassName('gb'); //гарант-бухгалтер-госсектора
+let gbg = document.getElementsByClassName('gbg');  //гарант-бухгалтер-госсектора
+let gu = document.getElementsByClassName('gu');  //  гарант-юрист
+let ggb = document.getElementsByClassName('ggb');  //  гарант-главный-бухгалтер 
+let ggbg = document.getElementsByClassName('ggbg');  //гарант-главный-бухгалтер-госсектора
+let gp = document.getElementsByClassName('gp');       //гарант-предприятие
+*/
+for(let i=0; i<gb.length; i++) {
+    //console.log(paket1);
+     // 1 и 2 пункт задачи
+     gb[i].onclick = function() {
+         console.log('788888');
+        let gbChecked = document.getElementsByClassName('gb > [type="checkbox"]:checked').length;
+        console.log(gbChecked);
+        complect.checked = gbChecked == gb.length;
+        complect.indeterminate = gbChecked > 0 && gbChecked < gb.length;
+    }
+}
+
+complect.onclick = function() {  // 3
+    for(var i=0; i<gb.length; i++) {
+        gb[i].checked = this.checked;
+    }
+    
+    
+}
+
+function check()
+{
+    var inp = document.querySelector('.form-check-input');
+    for (var i = 0; i < inp.length; i++) {
+        if (inp[i].type == "radio" && inp[i].checked) {
+            console.log(inp[i].value);
+        }
+    }
+    inp.addEventListener('click', function() {
+        check();
+    })
+    
+}
+
 
 /*http://jsfiddle.net/leaverou/ASPUA/
 http://shpargalkablog.ru/2013/08/checked.html*/

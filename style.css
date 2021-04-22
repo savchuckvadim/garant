@@ -126,7 +126,7 @@ h2{
     
 }
 .btn__play:hover{
-    content: url('/image/icons8-year-of-dragon-90.png');
+    content: url('/icons8-year-of-dragon-90.png');
     border-radius: 50%;
 
 }
@@ -303,3 +303,5 @@ p, label{
      border-width: 0.1px;
      padding: 0.1rem;
  }
+
+ 
